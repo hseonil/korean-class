@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>행복한 한국어 교실 자료실</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Malgun Gothic", sans-serif;
+            background: #f4f8f7;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background: #2b7a78;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .welcome {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .welcome h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+            color: #245c5a;
+        }
+
+        .welcome p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            width: 100%;
+            max-width: 340px;
+        }
+
+        .download-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 20px;
+            background: white;
+            color: #245c5a;
+            border: 2px solid #d5e8e5;
+            border-radius: 14px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 12px #0000000d;
+            transition: 0.2s;
+        }
+
+        .download-btn:hover {
+            background: #2b7a78;
+            color: white;
+            border-color: #2b7a78;
+            transform: translateY(-3px);
+        }
+
+        .icon {
+            font-size: 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            color: #777;
+            background: #e8f0ee;
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 23px;
+            }
+
+            .welcome h2 {
+                font-size: 21px;
+            }
+
+            .download-btn {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>행복한 한국어 교실 자료실</h1>
+        <p>함께 배우고, 함께 성장하는 한국어 교실</p>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>한국어 학습 자료</h2>
+            <p>
+                한국어 공부에 필요한 자료를<br>
+                아래 버튼을 눌러 다운로드하세요.
+            </p>
+        </section>
+
+        <div class="button-container">
+
+            <a href="downloads/wordbook.pdf"
+               class="download-btn" download>
+                <span class="icon">📖</span>
+                단어장 다운로드
+            </a>
+
+            <a href="downloads/card-game.pdf"
+               class="download-btn" download>
+                <span class="icon">🎴</span>
+                카드 게임 다운로드
+            </a>
+
+            <a href="downloads/worksheet.pdf"
+               class="download-btn" download>
+                <span class="icon">📝</span>
+                활동지 다운로드
+            </a>
+
+        </div>
+    </main>
+
+    <footer>
+        행복한 한국어 교실 | 외국인 근로자 한국어 교육 자료실
+    </footer>
+
+</body>
+</html>
